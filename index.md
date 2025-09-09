@@ -38,3 +38,7 @@ Feel free to explore my professional background and connect with me below.
   </div>
 </div>
 
+
+
+
+_Last updated: {{ page.last_modified_at | date: "%Y-%m-%d" }}_
