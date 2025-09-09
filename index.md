@@ -1,7 +1,7 @@
 # Portfolio
 ### Introduction
 <!-- ![Photo of me in Rocky Mountain National Park](/img/RMNP_MW.jpg)-->
-<p align="right">
+<!--<p align="right">
   <img src="/img/RMNP_MW.jpg" alt="Rocky Mountain National Park - Matthew Woodland" width="250" style="border-radius:12px;">
 </p>
 Hi, I’m Matthew Woodland, a graduate student in the Geography Department at the University of Colorado Boulder. My academic background is in GIS, remote sensing, and Earth/atmospheric sciences. My current work builds on these foundations through the lens of public health.
@@ -10,7 +10,7 @@ I research indoor air quality and its impacts on pediatric health, using low-cos
 
 Feel free to explore my professional background and connect with me below.
 * <a href="https://www.linkedin.com/in/matthew-woodland-5451761b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B1%2Bzu3UYjSuSn%2FtJzWiG8Bw%3D%3D" target="_blank">LinkedIn</a>
-* <a href= "mailto:mawo7952@colorado.edu">Contact me</a>
+* <a href= "mailto:mawo7952@colorado.edu">Contact me</a> -->
 
 
 
@@ -32,16 +32,15 @@ Feel free to explore my professional background and connect with me below.
     <p>
       Feel free to explore my professional background and connect with me below.</p>
     <ul>
-    <li><a href="https://www.linkedin.com/in/matthew-woodland-5451761b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B1%2Bzu3UYjSuSn%2FtJzWiG8Bw%3D%3D" target="_blank">LinkedIn</a>
-    <li><a href= "mailto:mawo7952@colorado.edu">Contact me</a>
-    </li>
+      <li><a href="https://www.linkedin.com/in/matthew-woodland-5451761b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B1%2Bzu3UYjSuSn%2FtJzWiG8Bw%3D%3D" target="_blank">LinkedIn</a>
+      <li><a href= "mailto:mawo7952@colorado.edu">Contact me</a>
     </ul>
   </div>
 
   <!-- Image -->
   <div style="flex-shrink: 0;">
     <img src="/img/RMNP_MW.jpg" 
-         alt="Rocky Mountain National Park - Matthew Woodland" 
+         alt="Photo of me in Rocky Mountain National Park" 
          style="width: 250px; border-radius: 12px;">
   </div>
 </div>
