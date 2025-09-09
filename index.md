@@ -11,7 +11,6 @@ I research indoor air quality and its impacts on pediatric health, using low-cos
 Feel free to explore my professional background and connect with me below.
 * <a href="https://www.linkedin.com/in/matthew-woodland-5451761b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B1%2Bzu3UYjSuSn%2FtJzWiG8Bw%3D%3D" target="_blank">LinkedIn</a>
 * <a href= "mailto:mawo7952@colorado.edu">Contact me</a> -->
-theme: jekyll-theme-slate
 <div style="display: flex; justify-content: space-between; align-items: flex-start;">
   <!-- Text Section -->
   <div style="flex: 1; margin-right: 20px;">
