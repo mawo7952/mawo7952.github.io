@@ -41,13 +41,6 @@ Feel free to explore my professional background and connect with me below.
 
 ### Map of CU Boulder
 Below is an interactive map of CU Boulder's main campus. I completed my undergrad here and am now pursuing my Master's.
-<div style="text-align: center;">
+
 <embed type="text/html" src="img/UCB.html" width="750" height="700">
-</div>
-<embed type="text/html" src="img/UCB.html" width="750" height="700">
-<div style="text-align: left;">
-  <embed type="text/html" src="img/UCB.html" width="750" height="700">
-</div>
-<div style="display: flex; justify-content: flex-start;">
-  <embed type="text/html" src="img/UCB.html" width="750" height="700">
-</div>
+
