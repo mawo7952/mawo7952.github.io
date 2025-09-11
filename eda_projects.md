@@ -1,4 +1,4 @@
-# Projects from Earth Data Analytics 
+# Projects from Earth Data Science Class 
 
 ### Map of CU Boulder
 Below is an interactive map of CU Boulder's main campus. I completed my undergrad here and am now pursuing my Master's.
