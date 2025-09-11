@@ -38,7 +38,7 @@ Feel free to explore my professional background and connect with me below.
   </div>
 </div>
 
-
+# Example of Work
 [Earth Data Analytics Projects](./eda_projects.md)
 
 <!-- ### Map of CU Boulder
