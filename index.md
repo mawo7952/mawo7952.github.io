@@ -39,8 +39,10 @@ Feel free to explore my professional background and connect with me below.
 </div>
 
 
-### Map of CU Boulder
+[Earth Data Analytics Projects](./eda_projects.md)
+
+<!-- ### Map of CU Boulder
 Below is an interactive map of CU Boulder's main campus. I completed my undergrad here and am now pursuing my Master's.
 
-<embed type="text/html" src="img/UCB.html" width="750" height="700">
+<embed type="text/html" src="img/UCB.html" width="750" height="700"> -->
 
