@@ -33,7 +33,7 @@ Data used for this project will be from the Global Historical Climatology Networ
 
 Because there is no monitoring station in Round Rock with sufficient historical data, I am using a station in Georgetown, TX, a nearby suburb approximately 10 miles away. This station recorded temperatures daily at 8 a.m. continuously from July 1, 1981, and has only 4% missing data. Observations from 1981 and 2025 were excluded due to the incompleteness of those years.
 
-### Temperature trends in Round Rock since 1981
+### Temperature trends in Round Rock since 1982
 To examine long-term trends in Round Rock’s temperatures, daily observations were first averaged annually to reduce short-term variability and highlight underlying patterns. This upscaling approach is consistent with previous climate trend analyses, such as Sonet and Reygadas (2025), who aggregated daily data to annual values to reveal regional warming patterns in Texas from 1981 to 2023. 
 
 An interactive plot is displayed below in which you can further examine the temperature data over time. 
