@@ -35,9 +35,9 @@ Because there is no monitoring station in Round Rock with sufficient historical 
 
 ### Temperature trends in Round Rock since 1981
 To examine long-term trends in Round Rock’s temperatures, daily observations were first averaged annually to reduce short-term variability and highlight underlying patterns. This upscaling approach is consistent with previous climate trend analyses, such as Sonet and Reygadas (2025), who aggregated daily data to annual values to reveal regional warming patterns in Texas from 1981 to 2023. 
+<embed type="text/html" src="img/RR_annual_temp_interactive.html" width="750" height="600">
 
 test
-<embed type="text/html" src="img/RR_annual_temp_interactive.html" width="750" height="600">
 test
 
 #### Ordinary Least Squares (OLS) Regression
