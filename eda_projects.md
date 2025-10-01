@@ -24,19 +24,19 @@ Round Rock is a medium-sized suburban development just north of Austin, Texas. I
 
 Located in central Texas, Round Rock experiences hot summers, often exceeding 100°F, with high humidity and generally dry conditions. The region’s climate is influenced by the Gulf of Mexico, which provides a primary source of moisture, particularly in summer when warm sea surface temperatures and winds bring humid air inland. In contrast, winter conditions are shaped by continental air masses from the interior of North America, which bring dry and cool air. This creates strong seasonal temperature contrasts with the hot, dry air masses originating from central Mexico that contribute to Texas’ characteristically hot summers. These conditions drive frequent droughts and can trigger “weather whiplash”, with dry periods quickly replaced by intense rainfall and flooding (Gerlich et al., 2025).
 
-Since the early 1900s, average temperatures in Texas have risen nearly 1.5°F, with nighttime temperatures increasing particularly rapidly (Runkle et al., 2022). These rising temperatures pose serious risks to human health (U.S. Environmental Protection Agency, 2016), as elevated nighttime temperatures prevent the body from cooling down and recovering, furhter exacerbating the dangers of heat during the day. 
+Since the early 1900s, average temperatures in Texas have risen nearly 1.5°F, with nighttime temperatures increasing particularly rapidly (Runkle et al., 2022). These rising temperatures pose serious risks to human health (U.S. Environmental Protection Agency, 2016), as elevated nighttime temperatures prevent the body from cooling down and recovering, further exacerbating the dangers of heat during the day. 
 
 Building on this context, the goal of this project is to examine historical temperature trends in Round Rock and provide continued evidence of a warming climate in my hometown/state.
 
 ### Data
 Data used for this project will be from the Global Historical Climatology Network–Daily (GHCN-Daily) dataset (Menne et al., 2012), curated by the National Centers for Environmental Information (NCEI). The NCEI’s GHCN-Daily dataset compiles daily climate observations from land-based stations worldwide, including airports, weather stations, and other observer-run sites. These stations measure variables such as temperature (standardized in degrees Fahrenheit; although it can be changed based on user preference), precipitation, snowfall, and snow depth. Data are updated frequently from ~30 different sources and then integrated and quality-checked by NCEI to ensure accuracy and consistency.
 
-Because there is no monitoring station in Round Rock with sufficient historical data, I am using a station in Georgetown, TX, a nearby suburb approximately 10 miles away. This station recorded temperatures daily at 8 a.m. continuously from July 1, 1981, and has only 4% missing data. Observations from 1981 and 2025 were excluded due to the incompleteness of those years.
+Because there is no monitoring station in Round Rock with sufficient historical data, I am using a station in Georgetown, TX, a nearby suburb approximately 10 miles away. This station has recorded temperatures daily at 8 a.m. continuously from July 1, 1981, and has only 4% missing data. Observations from 1981 and 2025 were excluded in this analysis due to the incompleteness of those years.
 
 ### Temperature trends in Round Rock since 1982
 To examine long-term trends in Round Rock’s temperatures, daily observations were first averaged annually to reduce short-term variability and highlight underlying patterns. This upscaling approach is consistent with previous climate trend analyses, such as Sonet and Reygadas (2025), who aggregated daily data to annual values to reveal regional warming patterns in Texas from 1981 to 2023. 
 
-An interactive plot is displayed below in which you can further examine the temperature data over time. 
+Despite some year-to-year variability, the overall trend is clear: there's a steady increase in the annual average temperature in Round Rock, TX, since the 1980s. An interactive plot is displayed below in which you can further examine the temperature data over time. 
 
 <embed type="text/html" src="img/RR_annual_temp_interactive.html" width="750" height="325">
 
@@ -52,10 +52,10 @@ Following this, an ordinary least squares (OLS) regression was applied to quanti
   </figcaption>
 </figure>
 
-According to the OLS regression, the average annual temperature in Round Rock has increased by approximately 0.15°F per year between 1982 and 2024, corresponding to an estimated total increase of about 6.3°F over the study period. This estimate reflects the linear trend predicted by the model.
+According to the OLS regression, the average annual temperature in Round Rock has increased by approximately 0.15°F per year between 1982 and 2024, corresponding to an estimated total increase of about 6.3°F over the study period. This estimate reflects the linear trend predicted by the model. 
 
 ### Conclusion
-This analysis of annual average temperatures in Round Rock, Texas, provides clear evidence of a long-term warming trend. By aggregating daily measurements to annual averages and applying an OLS regression, I found that temperatures have increased at an average rate of approximately 0.15°F per year. This trend is consistent with broader regional observations across Texas and underscores the ongoing effects of climate change at the local scale. 
+This analysis of annual average temperatures in Round Rock, Texas, provides clear evidence of a long-term warming trend. By aggregating daily measurements to annual averages and applying an OLS regression, I found that temperatures have increased at an average rate of approximately 0.15°F per year. Even with data from only one monitor, this pattern of warming is evident. This trend is consistent with broader regional observations across Texas (Runkle et al., 2022; Sonet & Reygadas, 2025; Nielsen-Gammon, 2011) and underscores the ongoing effects of climate change at the local scale.
 
 ### Supplemental Attachment
 Below, you can find the code used to complete this analysis.
