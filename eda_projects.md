@@ -37,7 +37,10 @@ Because there is no monitoring station in Round Rock with sufficient historical 
 To examine long-term trends in Round Rock’s temperatures, daily observations were first averaged annually to reduce short-term variability and highlight underlying patterns. This upscaling approach is consistent with previous climate trend analyses, such as Sonet and Reygadas (2025), who aggregated daily data to annual values to reveal regional warming patterns in Texas from 1981 to 2023. 
 
 <div style="text-align: center; margin: 20px 0;">
-  <embed type="text/html" src="/img/RR_annual_temp_interactive.html" width="750" height="600" style="border: none;">
+  <iframe src="/img/RR_annual_temp_interactive.html" 
+          width="750" height="600" 
+          style="border: none;">
+  </iframe>
 </div>
 
 #### Ordinary Least Squares (OLS) Regression
@@ -56,6 +59,11 @@ According to the OLS regression, the average annual temperature in Round Rock ha
 
 ### Conclusion
 This analysis of annual average temperatures in Round Rock, Texas, provides clear evidence of a long-term warming trend. By aggregating daily measurements to annual averages and applying an OLS regression, I found that temperatures have increased at an average rate of approximately 0.15°F per year. This trend is consistent with broader regional observations across Texas and underscores the ongoing effects of climate change at the local scale. 
+
+### Supplemental Attachment
+Below, you can find the code used to complete this analysis.
+
+[Round Rock, Texas Climate Investigation](./portfolio_posts/RR-climate-change-portfolio-code.html)
 
 ### References
 U.S. Environmental Protection Agency. (2016). *What climate change means for Texas* (EPA 430-F-16-045, 2 pp.). <https://www.epa.gov/sites/production/files/2016-09/documents/climate-change-tx.pdf> 
