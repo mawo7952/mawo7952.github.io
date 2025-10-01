@@ -39,11 +39,13 @@ To examine long-term trends in Round Rock’s temperatures, daily observations w
 Following this, an ordinary least squares (OLS) regression was applied to quantify the magnitude and direction of the trend over time. 
 
 ![The OLS regression slope (β₁) is 0.147°F per year, indicating a long-term warming trend](/img/RR_OLS_graph.png)
-<figure style="flex-shrink: 0;">
+<figure style="flex-shrink: 0; width: 600px; margin: 0 auto;">
   <img src="/img/RR_OLS_graph.png" 
        alt="OLS regression of annual temperatures in Round Rock" 
-       style="width: 600px; border-radius: 12px;">
-  <figcaption>The OLS regression slope (β₁) is 0.147°F per year, indicating a long-term warming trend.</figcaption>
+       style="width: 100%; border-radius: 12px;">
+  <figcaption style="text-align: center; font-style: italic; font-size: 0.9em; margin-top: 8px;">
+    The OLS regression slope (β₁) is 0.147°F per year, indicating a long-term warming trend.
+  </figcaption>
 </figure>
 
 According to the OLS regression, the average annual temperature in Round Rock has increased by approximately 0.15°F per year between 1982 and 2024, corresponding to an estimated total increase of about 6.3°F over the study period. This estimate reflects the linear trend predicted by the model.
