@@ -13,7 +13,7 @@ Areas across the globe are facing the dangers of a changing climate. In this sho
 ### Climate History of Round Rock, TX
 Round Rock is a medium-sized suburban development just north of Austin, Texas. It is named after a literal rock that is round...ish. Being the place that I grew up and spent 18 years of my life, and where my mother still lives, I'm curious to investigate its climate trends with empirical data. 
 
-<figure style="flex-shrink: 0; width: 300px; margin: 0 auto;">
+<figure style="flex-shrink: 0; width: 500px; margin: 0 auto;">
   <img src="/img/round_rock.jpg" 
        alt="The Round Rock - Photo Credits: Texas State University" 
        style="width: 100%; border-radius: 12px;">
@@ -36,7 +36,9 @@ Because there is no monitoring station in Round Rock with sufficient historical 
 ### Temperature trends in Round Rock since 1981
 To examine long-term trends in Round Rock’s temperatures, daily observations were first averaged annually to reduce short-term variability and highlight underlying patterns. This upscaling approach is consistent with previous climate trend analyses, such as Sonet and Reygadas (2025), who aggregated daily data to annual values to reveal regional warming patterns in Texas from 1981 to 2023. 
 
-<embed type="text/html" src="img/RR_annual_temp_interactive.html" width="750" height="600">
+<div style="text-align: center; margin: 20px 0;">
+  <embed type="text/html" src="/img/RR_annual_temp_interactive.html" width="750" height="600" style="border: none;">
+</div>
 
 #### Ordinary Least Squares (OLS) Regression
 Following this, an ordinary least squares (OLS) regression was applied to quantify the magnitude and direction of the trend over time. 
