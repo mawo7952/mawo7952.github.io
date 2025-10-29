@@ -119,7 +119,7 @@ The final metric, normalized density, represents Purple Martin activity relative
 
 Below is an interactive map in which you can explore the spatial patterns of Purple Martins across each month of 2024. 
 
-<embed type="text/html" src="img/PurpleMartin_migration.html" width="850" height="850">
+<embed type="text/html" src="img/PurpleMartin_migration.html" width="850" height="830">
 
 
 The map visualizes normalized Purple Martin occurrence densities by ecoregion and month. Polygon color represents the relative density of observations after accounting for sampling effort, month, and ecoregion area, allowing fair comparisons across space and time. Using this approach, we can observe the seasonal migration patterns of Purple Martins across North America, from breeding grounds in the central and eastern United States and Canada to wintering areas in Central and South America.
