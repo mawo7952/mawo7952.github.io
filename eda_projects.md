@@ -99,25 +99,37 @@ I used observation records from the Global Biodiversity Information Facility (GB
 #### Ecoregions Data
 To contextualize sightings, I overlaid them on the WWF Terrestrial Ecoregions of the World (Olson et al., 2001). Ecoregions group land areas with similar climate, topography, and vegetation, providing a biologically meaningful framework for analyzing species distribution. This approach allowed for the calculation of occurrence densities relative to ecological context rather than just geographic space.
 
-### Methods Description
-Normalization -- why is it necessary, how did you do it? 
-we normalized by ecoregion samples, by month samples, and by area. Normalized sampling effort over space and time.
+### Methods 
 
-### Plot Headline
-Embed html file (plot) and give a description
-plot description, discussion, conclusion
-ideally link back to the early text for context
+#### Data Processing
+Occurrence records from GBIF were aggregated by ecoregion and month to quantify Purple Martin activity across North America. Each observation was linked to its corresponding ecoregion. Ecoregions with essentially no observations (n <= 1) in a given month were excluded to focus the analysis on areas with actual Purple Martin activity.
 
-Since nest availability is influenced by humans, ecoregion-level patterns may reflect both natural habitat and human stewardship intensity.
+#### Normalization
+Raw occurrence counts can be misleading because survey effort varies across space and time:
 
-Purple Martins (Progne subis) are unique among North American birds because the eastern subspecies nests almost exclusively in human-provided cavity nest boxes. Nest “landlords” manage these boxes using practices like cleaning nests, removing parasite larvae, checking boxes frequently, and adding nesting material. Research has shown that these stewardship practices significantly increase occupancy rates, highlighting the species’ reliance on human intervention for successful breeding (Kelly & Hvenegaard, 2022).
+- By ecoregion: Some regions are surveyed more frequently than others, and larger ecoregions naturally contain more observations. Dividing by ecoregion-level sampling effort corrects for these differences.
 
-This reliance on human-maintained sites adds an interesting layer to their migration and distribution patterns: Purple Martins’ breeding success and population density in different ecoregions may partly reflect local human management practices, in addition to natural habitat quality.
+- By month: Observation intensity fluctuates seasonally due to factors like weather and citizen science engagement. Normalizing by month controls for these temporal biases.
 
-LOOK FOR EVIDENCE OF THIS Normalized occurrences: Areas with more active nest box programs might show higher normalized densities — something to consider when interpreting your maps.
+- By area: To account for the physical size of each ecoregion, counts were divided by area, producing a density measure (i.e., observations per square kilometer).
 
-Migration interest: Because breeding success depends on human intervention, Purple Martins provide a unique case where conservation practices directly influence migration timing and population distribution
+The final metric, normalized density, represents Purple Martin activity relative to both sampling effort and ecoregion size, enabling fair comparisons across months and regions.
 
+### Plot 
+
+Below is an interactive map in which you can explore the spatial patterns of Purple Martins across each month of 2024. 
+
+<embed type="text/html" src="img/PurpleMartin_migration.html" width="750" height="700">
+
+
+The map visualizes normalized Purple Martin occurrence densities by ecoregion and month. Polygon color represents the relative density of observations after accounting for sampling effort, month, and ecoregion area, allowing fair comparisons across space and time. Using this approach, we can observe the seasonal migration patterns of Purple Martins across North America, from breeding grounds in the central and eastern United States and Canada to wintering areas in Central and South America.
+
+From April through July, sightings of Purple Martins are more focused in the central and especially eastern areas of North America. The eastern subspecies of Purple Martins nests almost exclusively in human-provided cavity nest boxes, and landlords manage these sites by cleaning nests, removing parasites, adding nesting material, and monitoring occupancy. Research indicates that these stewardship practices significantly increase occupancy rates (Kelly & Hvenegaard, 2022), meaning that ecoregion-level patterns may reflect not only natural habitat quality but also the intensity of human management. Areas with more active nest box programs may show higher normalized densities, even after controlling for sampling effort and area, suggesting that human intervention can directly influence observed Purple Martin activity, particularly during the breeding season.
+
+### Supplemental Attachment
+Below, you can find the code used to complete this analysis.
+
+[Purple Martin Migration Code](./portfolio_posts/RR-climate-change-portfolio-code.html)
 
 ### References
 GBIF.org (29 October 2025) GBIF Occurrence Download <https://doi.org/10.15468/dl.6w6vfb>
@@ -125,4 +137,3 @@ GBIF.org (29 October 2025) GBIF Occurrence Download <https://doi.org/10.15468/dl
 Olson, D. M., Dinerstein, E., Wikramanayake, E. D., Burgess, N. D., Powell, G. V. N., Underwood, E. C., D’Amico, J. A., Itoua, I., Strand, H. E., Morrison, J. C., Loucks, C. J., Allnutt, T. F., Ricketts, T. H., Kura, Y., Lamoreux, J. F., Wettengel, W. W., Hedao, P., & Kassem, K. R. (2001). Terrestrial ecoregions of the world: A new map of life on Earth. BioScience, 51(11), 933–938. <https://doi.org/10.1641/0006-3568(2001)051[0933:TEOTWA]2.0.CO;2>
 
 Kelly, B. D., and Hvenegaard, G. T. (2022). Impacts of purple martin landlord stewardship activities on nest box occupancy. Wildlife Society Bulletin 46:e1247. <https://doi.org/10.1002/wsb.1247> 
-
