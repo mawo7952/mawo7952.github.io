@@ -76,4 +76,31 @@ Menne, M. J., Durre, I., Korzeniewski, B., McNeill, S., Thomas, K., Yin, X., Ant
 Sonet, M. S., & Reygadas, Y. (2025). Unveiling four decades of spatiotemporal climate trends in Texas (1981–2023). Journal of Hydrology: Regional Studies, 60, 102539. <https://doi.org/10.1016/j.ejrh.2025.102539>
 
 
+## Tracking Purple Martin Migration with GBIF and Ecoregions 
+
+## Species Description 
+Why did you choose this species? Is there any relevant information about it that makes its migration interesting?
+
+<figure style="flex-shrink: 0; width: 500px; margin: 0 auto;">
+  <img src="/img/purpleMartin.avif" 
+       alt="Male & Female Purple Martins - Photo Credits: Henry T. McLin" 
+       style="width: 100%; border-radius: 12px;">
+  <figcaption style="text-align: center; font-style: italic; font-size: 0.9em; margin-top: 8px;">
+    The Round Rock - Photo Credits: Texas State University
+  </figcaption>
+</figure>
+
+## Data Description 
+include citations
+Ecoregion
+GBIF occurrences 
+## Methods Description
+Normalization -- why is it necessary, how did you do it? 
+we normalized by ecoregion samples, by month samples, and by area. Normalized sampling effort over space and time.
+
+## Plot Headline
+Embed html file (plot) and give a description
+plot description, discussion, conclusion
+ideally link back to the early text for context
+
 
