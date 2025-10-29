@@ -78,29 +78,51 @@ Sonet, M. S., & Reygadas, Y. (2025). Unveiling four decades of spatiotemporal cl
 
 ## Tracking Purple Martin Migration with GBIF and Ecoregions 
 
-## Species Description 
-Why did you choose this species? Is there any relevant information about it that makes its migration interesting?
+### Species Description 
+The Purple Martin (Progne subis) is one of the largest swallows in North America. It feeds almost exclusively on aerial insects, making it an excellent indicator of ecosystem health. Notably, the species relies on communal nesting sites, often provided by humans in the form of gourds or nest boxes, which adds an interesting conservation dimension. Its migration is highly seasonal: during the summer, Purple Martins range across much of the central and eastern United States and Canada, and in the winter, they travel to central South America. This migratory pattern closely aligns with the seasonal availability of flying insects.
 
 <figure style="flex-shrink: 0; width: 500px; margin: 0 auto;">
-  <img src="/img/purpleMartin.avif" 
+  <img src="/img/purplemartin.avif" 
        alt="Male & Female Purple Martins - Photo Credits: Henry T. McLin" 
        style="width: 100%; border-radius: 12px;">
   <figcaption style="text-align: center; font-style: italic; font-size: 0.9em; margin-top: 8px;">
-    The Round Rock - Photo Credits: Texas State University
+    Male & Female Purple Martins - Photo Credits: Henry T. McLin
   </figcaption>
 </figure>
 
-## Data Description 
-include citations
-Ecoregion
-GBIF occurrences 
-## Methods Description
+### Data Description 
+To study Purple Martin migration, I combined species occurrence data with ecoregion information to provide better ecological context.
+
+#### GBIF Occurrences
+I used observation records from the Global Biodiversity Information Facility (GBIF), which include precise coordinates and timestamps for each Purple Martin sighting (GBIF.org, 2025). These data allowed me to analyze seasonal distribution patterns across North America. By mapping these occurrences, I could quantify activity in each ecoregion and track changes throughout the 2024 calendar year.
+
+#### Ecoregions Data
+To contextualize sightings, I overlaid them on the WWF Terrestrial Ecoregions of the World (Olson et al., 2001). Ecoregions group land areas with similar climate, topography, and vegetation, providing a biologically meaningful framework for analyzing species distribution. This approach allowed for the calculation of occurrence densities relative to ecological context rather than just geographic space.
+
+### Methods Description
 Normalization -- why is it necessary, how did you do it? 
 we normalized by ecoregion samples, by month samples, and by area. Normalized sampling effort over space and time.
 
-## Plot Headline
+### Plot Headline
 Embed html file (plot) and give a description
 plot description, discussion, conclusion
 ideally link back to the early text for context
 
+Since nest availability is influenced by humans, ecoregion-level patterns may reflect both natural habitat and human stewardship intensity.
+
+Purple Martins (Progne subis) are unique among North American birds because the eastern subspecies nests almost exclusively in human-provided cavity nest boxes. Nest “landlords” manage these boxes using practices like cleaning nests, removing parasite larvae, checking boxes frequently, and adding nesting material. Research has shown that these stewardship practices significantly increase occupancy rates, highlighting the species’ reliance on human intervention for successful breeding (Kelly & Hvenegaard, 2022).
+
+This reliance on human-maintained sites adds an interesting layer to their migration and distribution patterns: Purple Martins’ breeding success and population density in different ecoregions may partly reflect local human management practices, in addition to natural habitat quality.
+
+LOOK FOR EVIDENCE OF THIS Normalized occurrences: Areas with more active nest box programs might show higher normalized densities — something to consider when interpreting your maps.
+
+Migration interest: Because breeding success depends on human intervention, Purple Martins provide a unique case where conservation practices directly influence migration timing and population distribution
+
+
+### References
+GBIF.org (29 October 2025) GBIF Occurrence Download <https://doi.org/10.15468/dl.6w6vfb>
+
+Olson, D. M., Dinerstein, E., Wikramanayake, E. D., Burgess, N. D., Powell, G. V. N., Underwood, E. C., D’Amico, J. A., Itoua, I., Strand, H. E., Morrison, J. C., Loucks, C. J., Allnutt, T. F., Ricketts, T. H., Kura, Y., Lamoreux, J. F., Wettengel, W. W., Hedao, P., & Kassem, K. R. (2001). Terrestrial ecoregions of the world: A new map of life on Earth. BioScience, 51(11), 933–938. <https://doi.org/10.1641/0006-3568(2001)051[0933:TEOTWA]2.0.CO;2>
+
+Kelly, B. D., and Hvenegaard, G. T. (2022). Impacts of purple martin landlord stewardship activities on nest box occupancy. Wildlife Society Bulletin 46:e1247. <https://doi.org/10.1002/wsb.1247> 
 
