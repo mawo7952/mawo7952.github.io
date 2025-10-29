@@ -129,7 +129,7 @@ From April through July, sightings of Purple Martins are more focused in the cen
 ### Supplemental Attachment
 Below, you can find the code used to complete this analysis.
 
-[Purple Martin Migration Code](./portfolio_posts/RR-climate-change-portfolio-code.html)
+[Purple Martin Migration Code](./portfolio_posts/migration-portfolio-code.html)
 
 ### References
 GBIF.org (29 October 2025) GBIF Occurrence Download <https://doi.org/10.15468/dl.6w6vfb>
