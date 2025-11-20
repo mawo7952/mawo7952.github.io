@@ -18,7 +18,7 @@ Feel free to explore my professional background and connect with me below.
       sensing, and Earth/atmospheric sciences. My current work builds on these foundations through the lens of public health.
     </p>
     <p>
-      I research indoor air quality and its impacts on human health. My current work uses low-cost air pollution monitors to study PM<sub>2.5</sub> in elementary schools and students’ homes across the Front Range of Colorado.
+      I research indoor air quality and its impacts on human health. Currently, I use low-cost air pollution monitors to study PM<sub>2.5</sub> in elementary schools and students’ homes across the Front Range of Colorado.
     </p>
     <p>
       Feel free to explore my professional background and connect with me below.
