@@ -166,8 +166,10 @@ The second dataset is the OpenStreetMap (OSM) boundary for Boulder County, which
 To examine multi-year changes, I divided the 21-year period into two groups (e.g., Group 1: 2002-2010, Group 2: 2011-2022). For each group, I calculated the mean NDVI across all years, producing an average NDVI per period. 
 
 #### NDVI Change Calculation
-To visualize how vegetation changed between the two periods, I computed and mapped the difference between groups:
-- NDVI_difference = mean_NDVI_group2 - mean_NDVI_group1
+To visualize how vegetation changed between the two periods, I computed and mapped the difference between group means:
+
+$$ NDVI_{difference} = NDVI_{group2} - NDVI_{group1} $$
+
 Looking at the temporal difference between the two time periods will reveal "hotspots" where vegetation health has significantly increased or decreased. Positive values indicate areas that became greener on average in the later period, while negative values indicate vegetation loss, disturbance, or reduced greenness.
 
 #### NDVI Time Series
