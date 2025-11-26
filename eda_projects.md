@@ -146,7 +146,14 @@ Vegetation is a key component of ecosystem health, and understanding how it chan
 
 Analyzing NDVI across multiple years will allow us to observe these cumulative impacts and identify where vegetation has increased, decreased, or remained stable. These trends will help reveal how Boulder's landscape has been shaped over the last 20 years. 
 
-*picture of Boulder, CO*
+<figure style="flex-shrink: 0; width: 500px; margin: 0 auto;">
+  <img src="/img/boulder_view.avif" 
+       alt="Aerial View of Boulder, Colorado - Photo Credits: University of Colorado Boulder" 
+       style="width: 100%; border-radius: 12px;">
+  <figcaption style="text-align: center; font-style: italic; font-size: 0.9em; margin-top: 8px;">
+    Aerial View of Boulder, Colorado - Photo Credits: University of Colorado Boulder
+  </figcaption>
+</figure>
 
 ### Data 
 This analysis uses two primary datasets. The first is MODIS NDVI from NASA EarthData, long-term global vegetation index product derived from the MODIS instruments on NASA's Terra and Aqua satellites. MODIS NDVI provides cloud-filtered measurements of vegetation greeness at 250 meter spatial resolution and a 16-day temporal frequency. For this short analysis, I used NDVI data from May 1st-July 31st spanning 2002 through 2022, enabling comparson of vegetation conditions across two decades during peak vegetation times. 
@@ -161,17 +168,13 @@ To examine multi-year changes, I divided the 21-year period into two groups (e.g
 #### NDVI Change Calculation
 To visualize how vegetation changed between the two periods, I computed and mapped the difference between groups:
 - NDVI_difference = mean_NDVI_group2 - mean_NDVI_group1
-Positive values indicate areas that became greener on average in the later period, while negative values indicate vegetation loss, disturbance, or reduced greenness.
+Looking at the temporal difference between the two time periods will reveal "hotspots" where vegetation health has significantly increased or decreased. Positive values indicate areas that became greener on average in the later period, while negative values indicate vegetation loss, disturbance, or reduced greenness.
 
 #### NDVI Time Series
-To exame long-term trends, I also calculated:
+To examine long-term trends, I also calculated:
 - Mean NDVI inside the city of Boulder for each year
 - Mean NDVI outside the city boundary for each year
 
 These annual values were plotted as a time series to identify overall trends, possible drought impacts, or disturbances (e.g., wildfires).
 
-
-Looking at the temporal difference between the two time periods will reveal "hotspots" where vegetation health has significantly increased or decreased. 
-
-Then we will assess the spatial difference between NDVI inside and outside the municipal boundaries of Boulder.
 ### Results 
