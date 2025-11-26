@@ -168,8 +168,6 @@ To examine multi-year changes, I divided the 21-year period into two groups (e.g
 #### NDVI Change Calculation
 To visualize how vegetation changed between the two periods, I computed and mapped the difference between group means:
 
-$$ NDVI_{difference} = NDVI_{group2} - NDVI_{group1} $$
-
 <math display="block">
   <msub>
     <mtext>NDVI</mtext>
@@ -186,11 +184,6 @@ $$ NDVI_{difference} = NDVI_{group2} - NDVI_{group1} $$
     <mtext>group1</mtext>
   </msub>
 </math>
-
-<p>
-    NDVI<sub>difference</sub> = NDVI<sub>group2</sub> - NDVI<sub>group1</sub>
-</p>
-
 
 Looking at the temporal difference between the two time periods will reveal "hotspots" where vegetation health has significantly increased or decreased. Positive values indicate areas that became greener on average in the later period, while negative values indicate vegetation loss, disturbance, or reduced greenness.
 
