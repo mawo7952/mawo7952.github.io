@@ -156,9 +156,9 @@ Analyzing NDVI across multiple years will allow us to observe these cumulative i
 </figure>
 
 ### Data 
-This analysis uses two primary datasets. The first is MODIS NDVI from NASA EarthData, long-term global vegetation index product derived from the MODIS instruments on NASA's Terra and Aqua satellites. MODIS NDVI provides cloud-filtered measurements of vegetation greeness at 250 meter spatial resolution and a 16-day temporal frequency. For this short analysis, I used NDVI data from May 1st-July 31st spanning 2002 through 2022, enabling comparson of vegetation conditions across two decades during peak vegetation times. 
+This analysis uses two primary datasets. The first is MODIS NDVI from NASA EarthData (Didan, 2021), long-term global vegetation index product derived from the MODIS instruments on NASA's Terra satellite. MODIS NDVI provides cloud-filtered measurements of vegetation greenness at 250 meter spatial resolution and a 16-day temporal frequency. For this short analysis, I used NDVI data from May 1st-July 31st spanning 2002 through 2022, enabling comparison of vegetation conditions across two decades during peak vegetation times. 
 
-The second dataset is the OpenStreetMap (OSM) boundary for Boulder County, which I used to spatially subset the NDVI raster data. I also retrieved the OSM boundary which defines the official city limits for Boulder, which allows the analysis to focus on vegetation within and outside the city. 
+The second dataset is the OpenStreetMap (OSM) boundary for Boulder County (OpenStreetMap contributors, 2025), which I used to spatially subset the NDVI raster data. I also retrieved the OSM boundary which defines the official city limits for Boulder, which allows the analysis to focus on vegetation within and outside the city. 
 
 ### Methods
 
@@ -195,3 +195,12 @@ To examine long-term trends, I also calculated:
 These annual values were plotted as a time series to identify overall trends, possible drought impacts, or disturbances (e.g., wildfires).
 
 ### Results 
+
+
+These results are consistent with other findings identifying the largest amount of forest growth in the subalpine and upper montane (Rodman et al., 2019), areas furthest from the city of Boulder, where the Wildland Urban Interface is currently expanding.
+### References
+Didan, K. (2021). <i>MODIS/Terra Vegetation Indices 16-Day L3 Global 250m SIN Grid V061</i> [Data set]. NASA Land Processes Distributed Active Archive Center. <https://doi.org/10.5067/MODIS/MOD13Q1.061> Date Accessed: 2025-11-26
+
+OpenStreetMap contributors. (2025). Planet dump [Data set]. Retrieved from <https://planet.openstreetmap.org>
+
+Rodman, K. C., Veblen, T. T., Saraceni, S., & Chapman, T. B. (2019). Wildfire activity and land use drove 20th-century changes in forest cover in the Colorado Front Range. Ecosphere, 10(2), e02594. <https://doi.org/10.1002/ecs2.2594> 
