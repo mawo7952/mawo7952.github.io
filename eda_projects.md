@@ -137,3 +137,41 @@ GBIF.org (29 October 2025) GBIF Occurrence Download <https://doi.org/10.15468/dl
 Olson, D. M., Dinerstein, E., Wikramanayake, E. D., Burgess, N. D., Powell, G. V. N., Underwood, E. C., D’Amico, J. A., Itoua, I., Strand, H. E., Morrison, J. C., Loucks, C. J., Allnutt, T. F., Ricketts, T. H., Kura, Y., Lamoreux, J. F., Wettengel, W. W., Hedao, P., & Kassem, K. R. (2001). Terrestrial ecoregions of the world: A new map of life on Earth. BioScience, 51(11), 933–938. <https://doi.org/10.1641/0006-3568(2001)051[0933:TEOTWA]2.0.CO;2>
 
 Kelly, B. D., and Hvenegaard, G. T. (2022). Impacts of purple martin landlord stewardship activities on nest box occupancy. Wildlife Society Bulletin 46:e1247. <https://doi.org/10.1002/wsb.1247> 
+
+
+## Evaluating Vegetation Health in Boulder, CO from 2002 to 2022
+
+### Background 
+Vegetation is a key component of ecosystem health, and understanding how it changes over time can help us better interpret climate variability, land-use change, and natural disturbances in a region. Boulder County provides an excellent case study for examining long-term vegetation changes. Over the past two decades, the region has experienced several major events such as wildfires (2010 Fourmile Canyon fire, 2021 Marshall Fire), the multi-hundred year 2013 flood, as well as significant urban development and population growth. 
+
+Analyzing NDVI across multiple years will allow us to observe these cumulative impacts and identify where vegetation has increased, decreased, or remained stable. These trends will help reveal how Boulder's landscape has been shaped over the last 20 years. 
+
+*picture of Boulder, CO*
+
+### Data 
+This analysis uses two primary datasets. The first is MODIS NDVI from NASA EarthData, long-term global vegetation index product derived from the MODIS instruments on NASA's Terra and Aqua satellites. MODIS NDVI provides cloud-filtered measurements of vegetation greeness at 250 meter spatial resolution and a 16-day temporal frequency. For this short analysis, I used NDVI data from May 1st-July 31st spanning 2002 through 2022, enabling comparson of vegetation conditions across two decades during peak vegetation times. 
+
+The second dataset is the OpenStreetMap (OSM) boundary for Boulder County, which I used to spatially subset the NDVI raster data. I also retrieved the OSM boundary which defines the official city limits for Boulder, which allows the analysis to focus on vegetation within and outside the city. 
+
+### Methods
+
+#### Data Preprocessing
+To examine multi-year changes, I divided the 21-year period into two groups (e.g., Group 1: 2002-2010, Group 2: 2011-2022). For each group, I calculated the mean NDVI across all years, producing an average NDVI per period. 
+
+#### NDVI Change Calculation
+To visualize how vegetation changed between the two periods, I computed and mapped the difference between groups:
+- NDVI_difference = mean_NDVI_group2 - mean_NDVI_group1
+Positive values indicate areas that became greener on average in the later period, while negative values indicate vegetation loss, disturbance, or reduced greenness.
+
+#### NDVI Time Series
+To exame long-term trends, I also calculated:
+- Mean NDVI inside the city of Boulder for each year
+- Mean NDVI outside the city boundary for each year
+
+These annual values were plotted as a time series to identify overall trends, possible drought impacts, or disturbances (e.g., wildfires).
+
+
+Looking at the temporal difference between the two time periods will reveal "hotspots" where vegetation health has significantly increased or decreased. 
+
+Then we will assess the spatial difference between NDVI inside and outside the municipal boundaries of Boulder.
+### Results 
