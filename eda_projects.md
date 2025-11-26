@@ -170,6 +170,28 @@ To visualize how vegetation changed between the two periods, I computed and mapp
 
 $$ NDVI_{difference} = NDVI_{group2} - NDVI_{group1} $$
 
+<math display="block">
+  <msub>
+    <mtext>NDVI</mtext>
+    <mtext>difference</mtext>
+  </msub>
+  <mo>=</mo>
+  <msub>
+    <mtext>NDVI</mtext>
+    <mtext>group2</mtext>
+  </msub>
+  <mo>-</mo>
+  <msub>
+    <mtext>NDVI</mtext>
+    <mtext>group1</mtext>
+  </msub>
+</math>
+
+<p>
+    NDVI<sub>difference</sub> = NDVI<sub>group2</sub> - NDVI<sub>group1</sub>
+</p>
+
+
 Looking at the temporal difference between the two time periods will reveal "hotspots" where vegetation health has significantly increased or decreased. Positive values indicate areas that became greener on average in the later period, while negative values indicate vegetation loss, disturbance, or reduced greenness.
 
 #### NDVI Time Series
