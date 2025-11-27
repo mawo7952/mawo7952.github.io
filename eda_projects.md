@@ -217,7 +217,7 @@ I then looked at the annual mean July difference inside and outside the city to 
 
 #### Change in NDVI Between 2002–2010 and 2011–2022
 
-<embed type="text/html" src="img/ndvi_difference_plot.html" width="600" height="430">
+<embed type="text/html" src="img/ndvi_difference_plot.html" width="620" height="430">
 
 This map shows the difference in mean NDVI between the early period (2002–2010) and the later period (2011–2022). Overall, vegetation greenness across most of the Boulder area remained relatively stable between the two periods, with only small positive or negative changes. The only area showing a clear decrease in NDVI between the two periods corresponds to the 2010 Fourmile Canyon Fire burn scar in the area northwest of Boulder. Previous work in the Northern Front Range has shown that recent fires are the dominant driver of forest loss in this region, with burned areas experiencing substantial and prolonged reductions in canopy cover (Rodman et al., 2019). This suggests that the localized NDVI decline observed in my analysis reflects long-lasting ecological impacts of the 2010 and presumably other wildfires, rather than broader county-wide vegetation change. Outside of these disturbances, most of the region shows minimal long-term change.
 
