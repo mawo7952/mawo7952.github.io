@@ -197,7 +197,9 @@ These annual values were plotted as a time series to identify overall trends, po
 ### Results 
 
 
-These results are consistent with other findings identifying the largest amount of forest growth in the subalpine and upper montane regions (Rodman et al., 2019), areas furthest from the cities along the Front Range (e.g., Boulder) where the Wildland Urban Interface is currently rapidly expanding.
+These results are consistent with other findings identifying fires as most predictive of vegetation loss? (Rodman et al., 2019), 
+
+areas furthest from the cities along the Front Range (e.g., Boulder) where the Wildland Urban Interface is currently rapidly expanding.
 ### References
 Didan, K. (2021). <i>MODIS/Terra Vegetation Indices 16-Day L3 Global 250m SIN Grid V061</i> [Data set]. NASA Land Processes Distributed Active Archive Center. <https://doi.org/10.5067/MODIS/MOD13Q1.061> Date Accessed: 2025-11-26
 
