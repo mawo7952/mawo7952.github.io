@@ -194,11 +194,30 @@ To examine long-term trends, I also calculated:
 
 These annual values were plotted as a time series to identify overall trends, possible drought impacts, or disturbances (e.g., wildfires).
 
+I then looked at the annual mean July difference inside and outside the city to better understand the magnitude of the gap in vegetation. 
+
+<math display="block">
+  <msub>
+    <mtext>NDVI_July</mtext>
+    <mtext>difference</mtext>
+  </msub>
+  <mo>=</mo>
+  <msub>
+    <mtext>NDVI</mtext>
+    <mtext>inside</mtext>
+  </msub>
+  <mo>-</mo>
+  <msub>
+    <mtext>NDVI</mtext>
+    <mtext>outside</mtext>
+  </msub>
+</math>
+
 ### Results 
 
 #### Spatial Change in NDVI Between 2002–2010 and 2011–2022
 
-<embed type="text/html" src="img/ndvi_difference_plot.html" width="850" height="830">
+<embed type="text/html" src="img/ndvi_difference_plot.html" width="450" height="430">
 
 This map shows the difference in mean NDVI between the early period (2002–2010) and the later period (2011–2022). Overall, vegetation greenness across most of the Boulder area remained relatively stable between the two periods, with only small positive or negative changes. The only area showing a clear decrease in NDVI between the two periods corresponds to the 2010 Fourmile Canyon Fire burn scar in the area northwest of Boulder. Previous work in the Northern Front Range has shown that recent fires are the dominant driver of forest loss in this region, with burned areas experiencing substantial and prolonged reductions in canopy cover (Rodman et al., 2019). This suggests that the localized NDVI decline observed in my analysis reflects long-lasting ecological impacts of the 2010 and presumably other wildfires, rather than broader county-wide vegetation change. Outside of these disturbances, most of the region shows minimal long-term change.
 
@@ -211,7 +230,18 @@ Both regions show substantial year-to-year variability, likely driven by differe
 
 <embed type="text/html" src="img/total_difference.html" width="750" height="325">
 
-The third plot shows the annual difference between mean July NDVI outside the city and inside the city (NDVI_inside – NDVI_outside). The difference is negative in every year, confirming that vegetation greenness is consistently lower in the city than the surrounding natural and agricultural landscapes. The size of this gap fluctuates through time, with larger differences occurring in years when outside-the-city vegetation peaks (e.g., wetter years) or when urban vegetation may be more stressed (e.g., during drought). Despite these fluctuations, the relative pattern remains stable over the two decades: outside-Boulder NDVI is always higher than inside-Boulder NDVI.
+The third plot shows the annual difference between mean July NDVI outside the city and inside the city (NDVI_inside – NDVI_outside). The difference is negative in every year, confirming that vegetation greenness is consistently lower in the city than the surrounding natural and agricultural landscapes. The size of this gap fluctuates through time, following similar patterns to the annual preciption plot below. 
+
+<figure style="flex-shrink: 0; width: 500px; margin: 0 auto;">
+  <img src="/img/wet&dryyearsBoulder.webp" 
+       alt="Annual Precipitation Changes, Boulder, CO - Photo Credits: University of Colorado Boulder Center for Sustainable Landscapes and Communities" 
+       style="width: 100%; border-radius: 12px;">
+  <figcaption style="text-align: center; font-style: italic; font-size: 0.9em; margin-top: 8px;">
+    Annual Precipitation Changes, Boulder, CO - Photo Credits: University of Colorado Boulder Center for Sustainable Landscapes and Communities
+  </figcaption>
+</figure>
+
+Larger differences occur in years when outside-the-city vegetation peaks (e.g., wetter years) or when urban vegetation may be more stressed (e.g., during drought). Despite these fluctuations however, the relative pattern remains stable over the two decades: outside-Boulder NDVI is always higher than inside-Boulder NDVI.
 
 ### References
 Didan, K. (2021). <i>MODIS/Terra Vegetation Indices 16-Day L3 Global 250m SIN Grid V061</i> [Data set]. NASA Land Processes Distributed Active Archive Center. <https://doi.org/10.5067/MODIS/MOD13Q1.061> Date Accessed: 2025-11-26
