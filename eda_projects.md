@@ -249,7 +249,7 @@ Larger differences occur in years when outside-the-city vegetation peaks (e.g., 
 ### Supplemental Attachment
 Below, you can find the code used to complete this analysis.
 
-[NDVI Code](./portfolio_posts/migration-portfolio-code.html)
+[Boulder NDVI Code](./portfolio_posts/portfolio-code.html)
 
 ### References
 Didan, K. (2021). <i>MODIS/Terra Vegetation Indices 16-Day L3 Global 250m SIN Grid V061</i> [Data set]. NASA Land Processes Distributed Active Archive Center. <https://doi.org/10.5067/MODIS/MOD13Q1.061> Date Accessed: 2025-11-26
