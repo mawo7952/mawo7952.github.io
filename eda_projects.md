@@ -290,14 +290,14 @@ To determine the average timing of peak vegetation greenness across Boulder, I e
 
 ### Results 
 #### Mean NDVI 2002 - 2022
-<embed type="text/html" src="img/ndvi_yearly_map.html" width="750" height="325">
+<embed type="text/html" src="img/ndvi_yearly_map.html" width="1000" height="500">
 
-You can see that high in the mountains, the mean NDVI is consistently lower than a lot of the rest of the map. This is primarily due to later melting snow-pack. When you examing the raw NDVI files (plot below) you can see that vegetation here tends to peak in July. 
+You can see that high in the mountains, the mean NDVI is consistently lower than a lot of the rest of the map. This is primarily due to later melting (or persistent) snowpack. When you examine the raw NDVI files (plot below) you can see that vegetation here tends to peak in July. 
 
-<embed type="text/html" src="img/rawNDVIimages_timeseries_map.html" width="750" height="325">
+<embed type="text/html" src="img/rawNDVIimages_timeseries_map.html" width="1000" height="500">
 
 #### Peak NDVI Across Boulder County 
-<embed type="text/html" src="img/peak_ndvi_map.html" width="750" height="325">
+<embed type="text/html" src="img/peak_ndvi_map.html" width="750" height="450">
 
 This map shows when (which day of the year on average) vegetation in each pixel reaches its maximum greenness.
 
@@ -318,6 +318,11 @@ I also ran an OLS on the peak plant growth days inside the city to see if greeni
 #### Limitations 
 
 Because the NDVI image is every 16-days, the actual date identified as peak vegetation likely isn't the actual date vegetation greenness peaked. It's just the highest NDVI mean we have. There are many different ways I could have grouped the data (ag vs not, mtns vs not, etc.).
+
+### Supplemental Attachment
+Below, you can find the code used to complete this analysis.
+
+[Boulder Phenology NDVI Code](./portfolio_posts/ndvi-seasonality-final-code.html)
 
 ### References 
 Dallimer, M., Tang, Z., Gaston, K. J., & Davies, Z. G. (2016). The extent of shifts in vegetation phenology between rural and urban areas within a human-dominated region. <i>Ecology and evolution</i>, 6(7), 1942–1953. <https://doi.org/10.1002/ece3.1990>
