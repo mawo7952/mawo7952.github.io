@@ -1,5 +1,5 @@
-# Projects from Earth Data Science Class 
-
+# Projects from Earth Data Science Class (Fall 2025)
+Everything below was completed as part of an Earth Data Science class (GEOG 5463) I took through CU Boulder during my Master's.
 ## Map of CU Boulder
 Below is an interactive map of CU Boulder's main campus. I completed my undergrad here and am now pursuing my Master's.
 
@@ -11,7 +11,7 @@ Below is an interactive map of CU Boulder's main campus. I completed my undergra
 Areas across the globe are facing the dangers of a changing climate. In this short exercise, I will explore the changing climate in my hometown of Round Rock, Texas. Specifically, I will be investigating changes in temperature patterns from 1982 up through 2024. 
 
 ### Climate History of Round Rock, TX
-Round Rock is a medium-sized suburban development just north of Austin, Texas. It is named after a literal rock that is round...ish. Being the place that I grew up and spent 18 years of my life, and where my mother still lives, I'm curious to investigate its climate trends with empirical data. 
+Round Rock is a medium-sized suburban development just north of Austin, Texas. It is named after a literal rock that is round...ish. Being the place that I grew up and spent 18 years of my life, I'm curious to investigate its climate trends with empirical data. 
 
 <figure style="flex-shrink: 0; width: 500px; margin: 0 auto;">
   <img src="/img/round_rock.jpg" 
@@ -282,11 +282,42 @@ I used two data sources for this analysis. The first is MODIS NDVI from NASA Ear
 
 The second set of data I used was Boulder County and City shapefiles from OpenStreetMap (OpenStreetMap contributors, 2025) to help clearly distinguish between areas inside the city and outside.
 
+#### Analysis
+To begin with, I mapped mean NDVI values over the years. This helped to show the spatial patterns of greening across Boulder County. 
 
-For the analysis, I extracted the peak greenness date—the day of year where NDVI reaches a maximum—for every pixel and every year. I then averaged those peak dates across the full 20-year period to create a map of long-term average peak NDVI timing, essentially showing when vegetation peaks across the county.
+To determine the average timing of peak vegetation greenness across Boulder, I extracted the peak greenness date—the day of year where NDVI reaches a maximum—for every pixel and every year. I then averaged those peak dates across the full 20-year period to create a map of long-term average peak NDVI timing, essentially showing when vegetation peaks across the county.
+
+
 ### Results 
+#### Mean NDVI 2002 - 2022
+<embed type="text/html" src="img/ndvi_yearly_map.html" width="750" height="325">
+
+You can see that high in the mountains, the mean NDVI is consistently lower than a lot of the rest of the map. This is primarily due to later melting snow-pack. When you examing the raw NDVI files (plot below) you can see that vegetation here tends to peak in July. 
+
+<embed type="text/html" src="img/rawNDVIimages_timeseries_map.html" width="750" height="325">
+
+#### Peak NDVI Across Boulder County 
+<embed type="text/html" src="img/peak_ndvi_map.html" width="750" height="325">
+
+This map shows when (which day of the year on average) vegetation in each pixel reaches its maximum greenness.
+
+In the city of Boulder, the average peak of vegetation is on June 13th, while outside it’s July 19th. Within the city boundaries, we can see slightly lighter colors overall. Outside the city, we actually also see earlier greening in the more rural and agricultural areas around Boulder. In the foothills and mountains, however, vegetation peaks later, as represented by the darker colors. 
+
+#### Comparing Peak Greenness 
+<embed type="text/html" src="img/peak_plot.html" width="750" height="325">
+
+This plot shows the difference in the day of year when vegetation reaches its peak greenness inside the city compared to the surrounding area.
+Values at 0 mean that vegetation peaked at the same time in the city and outside of it. Everything below 0 in this plot shows an earlier peak inside the city. Across most years, it's evident that NDVI inside Boulder peaked earlier than in the surrounding, more natural landscapes.
+
+
+I also ran an OLS on the peak plant growth days inside the city to see if greening was occurring earlier over time. Due to the limited number of data points (n = 20), the model was very poorly fitted (R^2 = 0.01) and no significant results were found (p = 0.65). 
+
 
 ### Discussion
+
+#### Limitations 
+
+Because the NDVI image is every 16-days, the actual date identified as peak vegetation likely isn't the actual date vegetation greenness peaked. It's just the highest NDVI mean we have. There are many different ways I could have grouped the data (ag vs not, mtns vs not, etc.).
 
 ### References 
 Dallimer, M., Tang, Z., Gaston, K. J., & Davies, Z. G. (2016). The extent of shifts in vegetation phenology between rural and urban areas within a human-dominated region. <i>Ecology and evolution</i>, 6(7), 1942–1953. <https://doi.org/10.1002/ece3.1990>
