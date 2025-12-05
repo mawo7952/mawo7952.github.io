@@ -268,7 +268,7 @@ Satellite-derived vegetation metrics such as the Normalized Difference Vegetatio
 
 Recent research demonstrates that urbanization can alter vegetation phenology, with the start of the growing season found to be significantly associated with elevated land-surface temperatures, such as those found in urban areas (Jia et al., 2021). In other work, differences between urban and rural tree phenology have been linked not only to temperature but also to species composition. Some species exhibit increased temperature sensitivity in urban environments, leading to stronger phenological shifts than climate alone would predict (Wu et al., 2025).
 
-Taken together, these findings point towards a consistent pattern: the Urban Heat Island effect tends to advance vegetation greenness and alter peak timing, though local climate and species composition shape the exact nature of the shift.
+Taken together, these findings point towards a consistent pattern: the warming of urban areas, such as through the Urban Heat Island effect, tend to advance vegetation greenness and alter peak timing, though local climate and species composition shape the exact nature of the shift.
 
 Boulder County provides a particularly compelling setting for examining these dynamics. It contains a rapidly growing urban corridor along the Front Range, immediately adjacent to steep elevation gradients and snow-dominated mountain systems. This juxtaposition creates an ideal natural laboratory for investigating how urban warming shapes local vegetation phenology.
 
@@ -277,21 +277,31 @@ This project therefore asks:
 How do NDVI-based greenness patterns and peak greening timing differ across Boulder County, and do urban areas exhibit earlier or altered phenological timing consistent with UHI-related effects?
 
 ### Methods 
+#### Data
+I used two data sources for this analysis. The first is MODIS NDVI from NASA EarthData (Didan, 2021), which provides a long-term global vegetation index derived from the MODIS instruments on NASA's Terra satellite. These images are at 250-meter spatial resolution with a 16-day revisit time. This temporal frequency allowed me to examine at least two images per month. I focused on the April through July period from 2002 to 2022 because it captures the main greening phase in Boulder County and enables comparison of vegetation conditions across many years during peak greening times. 
 
+The second set of data I used was Boulder County and City shapefiles from OpenStreetMap (OpenStreetMap contributors, 2025) to help clearly distinguish between areas inside the city and outside.
+
+
+For the analysis, I extracted the peak greenness date—the day of year where NDVI reaches a maximum—for every pixel and every year. I then averaged those peak dates across the full 20-year period to create a map of long-term average peak NDVI timing, essentially showing when vegetation peaks across the county.
 ### Results 
 
 ### Discussion
 
 ### References 
-Dallimer, M., Tang, Z., Gaston, K. J., & Davies, Z. G. (2016). The extent of shifts in vegetation phenology between rural and urban areas within a human-dominated region. Ecology and evolution, 6(7), 1942–1953. <https://doi.org/10.1002/ece3.1990>
+Dallimer, M., Tang, Z., Gaston, K. J., & Davies, Z. G. (2016). The extent of shifts in vegetation phenology between rural and urban areas within a human-dominated region. <i>Ecology and evolution</i>, 6(7), 1942–1953. <https://doi.org/10.1002/ece3.1990>
 
-Qiu, T., Song, C., & Li, J. (2017). Impacts of Urbanization on Vegetation Phenology over the Past Three Decades in Shanghai, China. Remote Sensing, 9(9), 970. <https://doi.org/10.3390/rs9090970>
+Qiu, T., Song, C., & Li, J. (2017). Impacts of Urbanization on Vegetation Phenology over the Past Three Decades in Shanghai, China. <i>Remote Sensing</i>, 9(9), 970. <https://doi.org/10.3390/rs9090970>
 
-Gazal, R., White, M. A., Gillies, R., Rodemaker, E., Sparrow, E., & Gordon, L. (2008). GLOBE students, teachers, and scientists demonstrate variable differences between urban and rural leaf phenology. Global Change Biology, 14, 1568–1580. <https://doi.org/10.1111/j.1365-2486.2008.01602.x>
+Gazal, R., White, M. A., Gillies, R., Rodemaker, E., Sparrow, E., & Gordon, L. (2008). GLOBE students, teachers, and scientists demonstrate variable differences between urban and rural leaf phenology. <i>Global Change Biology</i>, 14, 1568–1580. <https://doi.org/10.1111/j.1365-2486.2008.01602.x>
 
-Jia, W., Zhao, S., Zhang, X., Liu, S., Henebry, G. M., & Liu, L. (2021). Urbanization imprint on land surface phenology: The urban–rural gradient analysis for Chinese cities. Global Change Biology, 27, 2895–2904. <https://doi.org/10.1111/gcb.15602>
+Jia, W., Zhao, S., Zhang, X., Liu, S., Henebry, G. M., & Liu, L. (2021). Urbanization imprint on land surface phenology: The urban–rural gradient analysis for Chinese cities. <i>Global Change Biology</i>, 27, 2895–2904. <https://doi.org/10.1111/gcb.15602>
 
-Wu, Z., Zohner, C. M., Zhou, Y., et al. (2025). Tree species composition governs urban phenological responses to warming. Nature Communications, 16, 3696. <https://doi.org/10.1038/s41467-025-58927-8>
+Wu, Z., Zohner, C. M., Zhou, Y., et al. (2025). Tree species composition governs urban phenological responses to warming. <i>Nature Communications</i>, 16, 3696. <https://doi.org/10.1038/s41467-025-58927-8>
+
+Didan, K. (2021). <i>MODIS/Terra Vegetation Indices 16-Day L3 Global 250m SIN Grid V061</i> [Data set]. NASA Land Processes Distributed Active Archive Center. <https://doi.org/10.5067/MODIS/MOD13Q1.061> Date Accessed: 2025-11-26
+
+OpenStreetMap contributors. (2025). Planet dump [Data set]. Retrieved from <https://planet.openstreetmap.org>
 
 Fully reproducible, well-documented code
 Write-up includes an introduction (background + motivation), methods, results, and discussion/interpretation section
