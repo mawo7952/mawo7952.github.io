@@ -257,3 +257,42 @@ Didan, K. (2021). <i>MODIS/Terra Vegetation Indices 16-Day L3 Global 250m SIN Gr
 OpenStreetMap contributors. (2025). Planet dump [Data set]. Retrieved from <https://planet.openstreetmap.org>
 
 Rodman, K. C., Veblen, T. T., Saraceni, S., & Chapman, T. B. (2019). Wildfire activity and land use drove 20th-century changes in forest cover in the Colorado Front Range. Ecosphere, 10(2), e02594. <https://doi.org/10.1002/ecs2.2594> 
+
+## Assessing the Greening of Vegetation Across Space & Time in Boulder, CO
+
+### Introduction 
+
+Vegetation phenology, the seasonal timing of green-up and plant peak growth, is a sensitive indicator of ecological change. Across landscapes like Boulder County, Colorado, phenological timing varies with strong environmental gradients, especially temperature. 
+
+Satellite-derived vegetation metrics such as the Normalized Difference Vegetation Index (NDVI) allows researchers to quantify these patterns consistently across both natural and developed environments. Phenology in urban regions, in particular, has received growing attention because cities modify local climate through the Urban Heat Island (UHI) effect, characterized by elevated temperatures due to greater impervious surface area and lower vegetation cover (Jia et al., 2021). Warmer microclimates, such as those seen in urban areas, can shift the timing of vegetation activity, often advancing green-up or extending the growing season (Gazal et al., 2008; Dallimer et al., 2016; Qiu et al., 2017). These phenological shifts have implications for ecosystem services, including cooling, carbon uptake, biodiversity support, and human well-being. Understanding how phenology responds across urban–rural gradients is therefore important for both ecological insight and land-management planning
+
+Recent research demonstrates that urbanization can alter vegetation phenology, with the start of the growing season found to be significantly associated with elevated land-surface temperatures, such as those found in urban areas (Jia et al., 2021). In other work, differences between urban and rural tree phenology have been linked not only to temperature but also to species composition. Some species exhibit increased temperature sensitivity in urban environments, leading to stronger phenological shifts than climate alone would predict (Wu et al., 2025).
+
+Taken together, these findings point towards a consistent pattern: the Urban Heat Island effect tends to advance vegetation greenness and alter peak timing, though local climate and species composition shape the exact nature of the shift.
+
+Boulder County provides a particularly compelling setting for examining these dynamics. It contains a rapidly growing urban corridor along the Front Range, immediately adjacent to steep elevation gradients and snow-dominated mountain systems. This juxtaposition creates an ideal natural laboratory for investigating how urban warming shapes local vegetation phenology.
+
+This project therefore asks:
+
+How do NDVI-based greenness patterns and peak greening timing differ across Boulder County, and do urban areas exhibit earlier or altered phenological timing consistent with UHI-related effects?
+
+### Methods 
+
+### Results 
+
+### Discussion
+
+### References 
+Dallimer, M., Tang, Z., Gaston, K. J., & Davies, Z. G. (2016). The extent of shifts in vegetation phenology between rural and urban areas within a human-dominated region. Ecology and evolution, 6(7), 1942–1953. <https://doi.org/10.1002/ece3.1990>
+
+Qiu, T., Song, C., & Li, J. (2017). Impacts of Urbanization on Vegetation Phenology over the Past Three Decades in Shanghai, China. Remote Sensing, 9(9), 970. <https://doi.org/10.3390/rs9090970>
+
+Gazal, R., White, M. A., Gillies, R., Rodemaker, E., Sparrow, E., & Gordon, L. (2008). GLOBE students, teachers, and scientists demonstrate variable differences between urban and rural leaf phenology. Global Change Biology, 14, 1568–1580. <https://doi.org/10.1111/j.1365-2486.2008.01602.x>
+
+Jia, W., Zhao, S., Zhang, X., Liu, S., Henebry, G. M., & Liu, L. (2021). Urbanization imprint on land surface phenology: The urban–rural gradient analysis for Chinese cities. Global Change Biology, 27, 2895–2904. <https://doi.org/10.1111/gcb.15602>
+
+Wu, Z., Zohner, C. M., Zhou, Y., et al. (2025). Tree species composition governs urban phenological responses to warming. Nature Communications, 16, 3696. <https://doi.org/10.1038/s41467-025-58927-8>
+
+Fully reproducible, well-documented code
+Write-up includes an introduction (background + motivation), methods, results, and discussion/interpretation section
+Well-researched, including references to at least 4 peer-reviewed publications and/or reports from government agencies or NGOs
