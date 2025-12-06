@@ -283,41 +283,62 @@ I used two data sources for this analysis. The first is MODIS NDVI from NASA Ear
 The second set of data I used was Boulder County and City shapefiles from OpenStreetMap (OpenStreetMap contributors, 2025) to help clearly distinguish between areas inside the city and outside.
 
 #### Analysis
-To begin with, I mapped mean NDVI values over the years. This helped to show the spatial patterns of greening across Boulder County. 
+To begin, I mapped mean NDVI values across Boulder County to visualize spatial patterns of vegetation cover from 2002 to 2022.
 
-To determine the average timing of peak vegetation greenness across Boulder, I extracted the peak greenness date—the day of year where NDVI reaches a maximum—for every pixel and every year. I then averaged those peak dates across the full 20-year period to create a map of long-term average peak NDVI timing, essentially showing when vegetation peaks across the county.
+Next, to estimate the average timing of peak vegetation greenness, I extracted the day of year (DOY) on which NDVI reached its maximum for every pixel in every year. I then averaged these pixel-level peak dates across the full 20-year period to produce a long-term map of peak NDVI timing, illustrating when vegetation typically reaches its seasonal maximum across the county.
 
+Finally, I compared annual peak greenness timing inside vs outside the city. After clipping each NDVI raster to the city limits and the surrounding non-urban area, I calculated the mean NDVI for each region on every available date, generating two parallel time series: one for inside the city and one for outside. For each year, I extracted the date on which mean NDVI reached its maximum in each region, yielding the annual DOY of peak greenness inside and outside the city. I then computed the difference between these peak dates and plotted the results to visualize how the timing of maximum vegetation greenness has differed between urban and non-urban areas over time.
+
+The difference ($\Delta$ DOY) was calculated as such: 
+<math display="block">
+  <msub>
+    <mi>&Delta;DOY</mi>
+  </msub>
+  <mo>=</mo>
+  <msub>
+    <mtext>DOY</mtext>
+    <mtext>inside</mtext>
+  </msub>
+  <mo>-</mo>
+  <msub>
+    <mtext>DOY</mtext>
+    <mtext>outside</mtext>
+  </msub>
+</math>
 
 ### Results 
 #### Mean NDVI 2002 - 2022
-<embed type="text/html" src="img/ndvi_yearly_map.html" width="1000" height="500">
+<embed type="text/html" src="img/ndvi_yearly_map.html" width="1000" height="450">
 
-You can see that high in the mountains, the mean NDVI is consistently lower than a lot of the rest of the map. This is primarily due to later melting (or persistent) snowpack. When you examine the raw NDVI files (plot below) you can see that vegetation here tends to peak in July. 
+As you slide through the years, consistently, it can be seen that the city of Boulder produces lower mean NDVI values (as represented by lighter colors) compared to the foothills west of it. This is consistent with my analysis in the previous post. 
 
-<embed type="text/html" src="img/rawNDVIimages_timeseries_map.html" width="1000" height="500">
+It can also be noticed that high in the mountains (around 105.65°W), the mean NDVI is always lower than a lot of the rest of the map. This area corresponds to the Indian Peaks mountain range, a large set of mountains along the Continental Divide with peaks reaching beyond 13,000 feet (3962.4 meters). This area, due to its high elevation, experiences much more persistent snowpack and later melting. When you examine the raw NDVI files (plot below), you can see that vegetation in/around this area tends to peak in July, if at all. 
+
+<embed type="text/html" src="img/rawNDVIimages_timeseries_map.html" width="1000" height="450">
 
 #### Peak NDVI Across Boulder County 
-<embed type="text/html" src="img/peak_ndvi_map.html" width="750" height="450">
+<embed type="text/html" src="img/peak_ndvi_map.html" width="750" height="400">
 
-This map shows when (which day of the year on average) vegetation in each pixel reaches its maximum greenness.
+This map shows when (which day of the year on average) vegetation in each pixel reaches its maximum greenness. As you hover over an area with your mouse, you can see what DOY that pixel reaches its peak greenness on average. 
 
-In the city of Boulder, the average peak of vegetation is on June 13th, while outside it’s July 19th. Within the city boundaries, we can see slightly lighter colors overall. Outside the city, we actually also see earlier greening in the more rural and agricultural areas around Boulder. In the foothills and mountains, however, vegetation peaks later, as represented by the darker colors. 
+In the city of Boulder, the average peak of vegetation is on June 14th (DOY = 165), while outside it’s July 20th (DOY = 201). Within the city boundaries, we can see slightly lighter colors overall. Outside the city, we actually also see earlier greening in the more rural and agricultural areas around the north, south, and east of Boulder. In the foothills and mountains, however, vegetation peaks later, as represented by the darker colors. 
 
 #### Comparing Peak Greenness 
 <embed type="text/html" src="img/peak_plot.html" width="750" height="325">
 
-This plot shows the difference in the day of year when vegetation reaches its peak greenness inside the city compared to the surrounding area.
-Values at 0 mean that vegetation peaked at the same time in the city and outside of it. Everything below 0 in this plot shows an earlier peak inside the city. Across most years, it's evident that NDVI inside Boulder peaked earlier than in the surrounding, more natural landscapes.
+This plots shows over time, the difference in the DOY when vegetation reaches its peak greenness inside the city compared to the surrounding area. 
+
+Values at 0 mean that vegetation peaked at the same time inside the city limits and outside of them. Everything below 0 in this plot shows an earlier peak inside the city. Across most years, it's evident that NDVI inside Boulder peaked earlier than in the surrounding, more natural landscapes.
 
 
-I also ran an OLS on the peak plant growth days inside the city to see if greening was occurring earlier over time. Due to the limited number of data points (n = 20), the model was very poorly fitted (R^2 = 0.01) and no significant results were found (p = 0.65). 
+Although no obvious trend, I decided to run an OLS on the peak plant growth days inside the city to see if greening was occurring earlier over time. Due to the limited number of data points (n = 20), however, the model was very poorly fitted (R^2^ = 0.01), and no significant results were found (p = 0.65). 
 
 
 ### Discussion
 
 #### Limitations 
 
-Because the NDVI image is every 16-days, the actual date identified as peak vegetation likely isn't the actual date vegetation greenness peaked. It's just the highest NDVI mean we have. There are many different ways I could have grouped the data (ag vs not, mtns vs not, etc.).
+Because the NDVI image is every 16-days, the actual date identified as peak vegetation likely isn't the actual date vegetation greenness peaked. It's just the date of the highest NDVI mean we have. There are also many different ways I could have grouped the data (ag vs not, mtns vs not, etc.).
 
 ### Supplemental Attachment
 Below, you can find the code used to complete this analysis.
