@@ -289,7 +289,8 @@ Next, to estimate the average timing of peak vegetation greenness, I extracted t
 
 Finally, I compared annual peak greenness timing inside vs outside the city. After clipping each NDVI raster to the city limits and the surrounding non-urban area, I calculated the mean NDVI for each region on every available date, generating two parallel time series: one for inside the city and one for outside. For each year, I extracted the date on which mean NDVI reached its maximum in each region, yielding the annual DOY of peak greenness inside and outside the city. I then computed the difference between these peak dates and plotted the results to visualize how the timing of maximum vegetation greenness has differed between urban and non-urban areas over time.
 
-The difference ($\Delta$ DOY) was calculated as such: 
+<p>The difference (&Delta;DOY) was calculated as such:</p>
+
 <math display="block">
   <msub>
     <mi>&Delta;DOY</mi>
