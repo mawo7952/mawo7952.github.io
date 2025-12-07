@@ -331,7 +331,11 @@ This plots shows over time, the difference in the DOY when vegetation reaches it
 
 Values at 0 mean that vegetation peaked at the same time inside the city limits and outside of them. Everything below 0 in this plot shows an earlier peak inside the city. Across most years, it's evident that NDVI inside Boulder peaked earlier than in the surrounding, more natural landscapes.
 
-Although no obvious trend, I decided to run an OLS on the peak plant growth days inside the city to see if greening was occurring earlier over time. Due to the limited number of data points (n = 20), however, the model was very poorly fitted ($R^2$ = 0.01), and no significant results were found (p = 0.65). 
+<p>
+Although no obvious trend, I decided to run an OLS on the peak plant growth days inside the city to see if greening was occurring earlier over time.
+Due to the limited number of data points (n = 20), however, the model was very poorly fitted
+(<strong>R<sup>2</sup> = 0.01</strong>), and no statistically significant result was found (p = 0.65).
+</p>
 
 ### Discussion
 Across all three analyses, it can be seen that vegetation in the city of Boulder tends to green up and reach peak chlorophyll productivity (i.e., greenness) earlier than vegetation in the surrounding area, but this pattern is largely shaped by both urban effects and strong elevational gradients.
