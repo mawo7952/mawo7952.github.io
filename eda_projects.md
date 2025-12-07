@@ -264,7 +264,7 @@ Rodman, K. C., Veblen, T. T., Saraceni, S., & Chapman, T. B. (2019). Wildfire ac
 
 Vegetation phenology, the seasonal timing of green-up and plant peak growth, is a sensitive indicator of ecological change. Across landscapes like Boulder County, Colorado, phenological timing varies with strong environmental gradients, especially temperature. 
 
-Satellite-derived vegetation metrics such as the Normalized Difference Vegetation Index (NDVI) allows researchers to quantify these patterns consistently across both natural and developed environments. Phenology in urban regions, in particular, has received growing attention because cities modify local climate through the Urban Heat Island (UHI) effect, characterized by elevated temperatures due to greater impervious surface area and lower vegetation cover (Jia et al., 2021). Warmer microclimates, such as those seen in urban areas, can shift the timing of vegetation activity, often advancing green-up or extending the growing season (Gazal et al., 2008; Dallimer et al., 2016; Qiu et al., 2017). These phenological shifts have implications for ecosystem services, including cooling, carbon uptake, biodiversity support, and human well-being. Understanding how phenology responds across urban–rural gradients is therefore important for both ecological insight and land-management planning
+Satellite-derived vegetation metrics such as the Normalized Difference Vegetation Index (NDVI) allows researchers to quantify these patterns consistently across both natural and developed environments. Phenology in urban regions, in particular, has received growing attention because cities modify local climate through the Urban Heat Island effect, characterized by elevated temperatures due to greater impervious surface area and lower vegetation cover (Jia et al., 2021). Warmer microclimates, such as those seen in urban areas, can shift the timing of vegetation activity, often advancing green-up or extending the growing season (Gazal et al., 2008; Dallimer et al., 2016; Qiu et al., 2017). These phenological shifts have implications for ecosystem services, including cooling, carbon uptake, biodiversity support, and human well-being. Understanding how phenology responds across urban–rural gradients is therefore important for both ecological insight and land-management planning
 
 Recent research demonstrates that urbanization can alter vegetation phenology, with the start of the growing season found to be significantly associated with elevated land-surface temperatures, such as those found in urban areas (Jia et al., 2021). In other work, differences between urban and rural tree phenology have been linked not only to temperature but also to species composition. Some species exhibit increased temperature sensitivity in urban environments, leading to stronger phenological shifts than climate alone would predict (Wu et al., 2025).
 
@@ -309,13 +309,13 @@ Finally, I compared annual peak greenness timing inside vs outside the city. Aft
 
 ### Results 
 #### Mean NDVI 2002 - 2022
-<embed type="text/html" src="img/ndvi_yearly_map.html" width="1000" height="450">
+<embed type="text/html" src="img/ndvi_yearly_map.html" width="1000" height="400">
 
 As you slide through the years, consistently, it can be seen that the city of Boulder produces lower mean NDVI values (as represented by lighter colors) compared to the foothills west of it. This is consistent with my analysis in the previous post. 
 
 It can also be noticed that high in the mountains (around 105.65°W), the mean NDVI is always lower than a lot of the rest of the map. This area corresponds to the Indian Peaks mountain range, a large set of mountains along the Continental Divide with peaks reaching beyond 13,000 feet (3962.4 meters). This area, due to its high elevation, experiences much more persistent snowpack and later melting. When you examine the raw NDVI files (plot below), you can see that vegetation in/around this area tends to peak in July, if at all. 
 
-<embed type="text/html" src="img/rawNDVIimages_timeseries_map.html" width="1000" height="450">
+<embed type="text/html" src="img/rawNDVIimages_timeseries_map.html" width="1000" height="400">
 
 #### Peak NDVI Across Boulder County 
 <embed type="text/html" src="img/peak_ndvi_map.html" width="750" height="400">
@@ -331,15 +331,29 @@ This plots shows over time, the difference in the DOY when vegetation reaches it
 
 Values at 0 mean that vegetation peaked at the same time inside the city limits and outside of them. Everything below 0 in this plot shows an earlier peak inside the city. Across most years, it's evident that NDVI inside Boulder peaked earlier than in the surrounding, more natural landscapes.
 
-
-Although no obvious trend, I decided to run an OLS on the peak plant growth days inside the city to see if greening was occurring earlier over time. Due to the limited number of data points (n = 20), however, the model was very poorly fitted (R^2^ = 0.01), and no significant results were found (p = 0.65). 
-
+Although no obvious trend, I decided to run an OLS on the peak plant growth days inside the city to see if greening was occurring earlier over time. Due to the limited number of data points (n = 20), however, the model was very poorly fitted ($R^2$ = 0.01), and no significant results were found (p = 0.65). 
 
 ### Discussion
+Across all three analyses, it can be seen that vegetation in the city of Boulder tends to green up and reach peak chlorophyll productivity (i.e., greenness) earlier than vegetation in the surrounding area, but this pattern is largely shaped by both urban effects and strong elevational gradients.
+
+First, the mean NDVI maps show that vegetation cover is generally lower within the urban core compared to the foothills and mountain regions. This reflects the expected reduction in vegetative density in developed areas, where the landscape is primarily made up of impervious surfaces and managed vegetation. In contrast, the forest and shrublands in the foothills maintain high NDVI values throughout the growing season, while high-elevation alpine areas exhibit persistently low NDVI due to sparse vegetation and snow persistence.
+
+The long-term map of peak NDVI timing adds important context: Boulder’s urban vegetation reaches its seasonal maximum over a month earlier than the surrounding areas on average (June 14 inside the city vs. July 20 outside). Earlier peak greenness within the city aligns with well-documented effects of the Urban Heat Island (Gazal et al., 2008; Dallimer et al., 2016; Qiu et al., 2017; Jia et al., 2021). Warmer temperatures in built environments accelerate plant development for many species, causing vegetation to green up earlier in spring, a pattern widely observed in urban–rural phenology studies.
+
+However, the spatial distribution of peak greenness reveals that urban warming is not the only driver. Agricultural areas on the plains also peak early, in some cases earlier than the city itself. These patterns likely reflect crop types, irrigation schedules, and land-use practices rather than UHI effects. Meanwhile, the foothills and high-elevation zones consistently show later peak NDVI, supporting the idea that snowpack persistence and cooler temperatures delay greening at higher elevations.
+
+The inside-outside comparison further reinforces these spatial patterns. Nearly every year shows negative ΔDOY values, indicating earlier peak greenness inside the city limits. Importantly, the timing difference is not constant across years. Some years show a much larger gap between urban and non-urban peak greenness, suggesting that interannual variability (e.g., climate anomalies, precipitation patterns, etc.) interacts with urban conditions to amplify or reduce these phenological differences.
+
+Taken together, these results show that urbanization does influence phenology in Boulder, Colorado, but that effect operates alongside strong elevation gradients and land-use differences across the county. Urban vegetation consistently greens up earlier, while agricultural fields and irrigated areas also experience early peaks. In contrast, mountainous regions demonstrate delayed greening likely driven largely by slower snowmelt and colder temperatures. This multi-layered pattern highlights how phenology in a mixed urban–mountain system is largely shaped by a combination of temperature gradients, land-use practices, and natural climatic constraints.
 
 #### Limitations 
+Because the NDVI image is every 16-days, the actual date identified as peak vegetation likely isn't the actual date vegetation greenness peaked. It's just the date of the highest NDVI mean we have. There are also many different ways I could have grouped the data besides just the city of boulder vs not (agroculture area vs not, mtns vs not, all the cities in boulder county vs not, etc.).
 
-Because the NDVI image is every 16-days, the actual date identified as peak vegetation likely isn't the actual date vegetation greenness peaked. It's just the date of the highest NDVI mean we have. There are also many different ways I could have grouped the data (ag vs not, mtns vs not, etc.).
+Several limitations should be considered when interpreting these findings. First, the NDVI data are collected at a 16-day interval, which means the identified peak greenness date represents the date of the maximum observed NDVI, not necessarily the true biological peak. Vegetation may have reached its highest greenness between satellite acquisitions, and this temporal resolution introduces a level of uncertainty, especially in areas where greening and senescence occur rapidly.
+
+Second, the analysis relies on a very broad inside-city vs. outside-city grouping, which simplifies the landscape but overlooks important land-use and ecological differences within Boulder County. Agricultural fields, irrigated lawns, natural grasslands, shrublands, and evergreen forests each have distinct phenological cycles that can influence NDVI independently of urbanization. Future work could refine the analysis by incorporating additional spatial categories, such as agricultural zones, elevation bands, or comparisons among all municipalities in Boulder County.
+
+Lastly, NDVI itself has some limitations. It can saturate in areas of dense vegetation and is sensitive to atmospheric conditions, snow cover, and soil brightness, all of which can affect estimates of vegetation timing and productivity.
 
 ### Supplemental Attachment
 Below, you can find the code used to complete this analysis.
@@ -360,7 +374,3 @@ Wu, Z., Zohner, C. M., Zhou, Y., et al. (2025). Tree species composition governs
 Didan, K. (2021). <i>MODIS/Terra Vegetation Indices 16-Day L3 Global 250m SIN Grid V061</i> [Data set]. NASA Land Processes Distributed Active Archive Center. <https://doi.org/10.5067/MODIS/MOD13Q1.061> Date Accessed: 2025-11-26
 
 OpenStreetMap contributors. (2025). Planet dump [Data set]. Retrieved from <https://planet.openstreetmap.org>
-
-Fully reproducible, well-documented code
-Write-up includes an introduction (background + motivation), methods, results, and discussion/interpretation section
-Well-researched, including references to at least 4 peer-reviewed publications and/or reports from government agencies or NGOs
