@@ -355,8 +355,6 @@ Several limitations should be considered when interpreting these findings. First
 
 Second, the analysis relies on a very broad inside-city vs. outside-city grouping, which simplifies the landscape but overlooks important land-use and ecological differences within Boulder County. Agricultural fields, irrigated lawns, natural grasslands, shrublands, and evergreen forests each have distinct phenological cycles that can influence NDVI independently of urbanization. Future work could refine the analysis by incorporating additional spatial categories, such as agricultural zones, elevation bands, or comparisons among all municipalities in Boulder County.
 
-Lastly, NDVI itself has some limitations. It can saturate in areas of dense vegetation and is sensitive to atmospheric conditions, snow cover, and soil brightness, all of which can affect estimates of vegetation timing and productivity.
-
 ### Supplemental Attachment
 Below, you can find the code used to complete this analysis.
 
