@@ -334,7 +334,7 @@ Values at 0 mean that vegetation peaked at the same time inside the city limits 
 <p>
 Although no obvious trend, I decided to run an OLS on the peak plant growth days inside the city to see if greening was occurring earlier over time.
 Due to the limited number of data points (n = 20), however, the model was very poorly fitted
-(<strong>R<sup>2</sup> = 0.01</strong>), and no statistically significant result was found (p = 0.65).
+(R<sup>2</sup> = 0.01), and no statistically significant result was found (p = 0.65).
 </p>
 
 ### Discussion
@@ -351,8 +351,6 @@ The inside-outside comparison further reinforces these spatial patterns. Nearly 
 Taken together, these results show that urbanization does influence phenology in Boulder, Colorado, but that effect operates alongside strong elevation gradients and land-use differences across the county. Urban vegetation consistently greens up earlier, while agricultural fields and irrigated areas also experience early peaks. In contrast, mountainous regions demonstrate delayed greening likely driven largely by slower snowmelt and colder temperatures. This multi-layered pattern highlights how phenology in a mixed urban–mountain system is largely shaped by a combination of temperature gradients, land-use practices, and natural climatic constraints.
 
 #### Limitations 
-Because the NDVI image is every 16-days, the actual date identified as peak vegetation likely isn't the actual date vegetation greenness peaked. It's just the date of the highest NDVI mean we have. There are also many different ways I could have grouped the data besides just the city of boulder vs not (agroculture area vs not, mtns vs not, all the cities in boulder county vs not, etc.).
-
 Several limitations should be considered when interpreting these findings. First, the NDVI data are collected at a 16-day interval, which means the identified peak greenness date represents the date of the maximum observed NDVI, not necessarily the true biological peak. Vegetation may have reached its highest greenness between satellite acquisitions, and this temporal resolution introduces a level of uncertainty, especially in areas where greening and senescence occur rapidly.
 
 Second, the analysis relies on a very broad inside-city vs. outside-city grouping, which simplifies the landscape but overlooks important land-use and ecological differences within Boulder County. Agricultural fields, irrigated lawns, natural grasslands, shrublands, and evergreen forests each have distinct phenological cycles that can influence NDVI independently of urbanization. Future work could refine the analysis by incorporating additional spatial categories, such as agricultural zones, elevation bands, or comparisons among all municipalities in Boulder County.
